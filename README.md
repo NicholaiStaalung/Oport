@@ -11,7 +11,7 @@ Expected return for the next period and given portfolio is stored in (self.expec
 Standard deviation (Risk) for the next period and given portfolio is stored in (self.stdOfMinVariancePortfolio, self.stdOfTangencyPortfolio)
 
 
-Im using the script to monitor daily risk in the danish C20CAP stock index, updated every 50 minute by scraping data from the internet.
+Im using the script to monitor daily risk in the danish C20CAP stock index, updated every 15 minutes by scraping data from the internet.
 
 
 
