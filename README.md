@@ -1,6 +1,6 @@
 "# Optimal asset portfolios" 
 
-By principles of the Capital Assets Pricing Model (CAPM), the script returns the normalized minimum variance and tangency vectors. These are the optimal portfolio weights for the two portfolios.
+By principles of the Capital Assets Pricing Model (CAPM), the script returns the normalized minimum variance and tangency vectors. These are the optimal portfolio weights for the two efficient portfolios.
 
 Script is initilized with OptimalPortfolioDiversification(), adding a numpy 2d array with asset returns (Stationary) as est_return_matrix arg and a Risk free return (Often just 0).
 
@@ -11,7 +11,7 @@ Expected return for the next period and given portfolio is stored in (self.expec
 Standard deviation (Risk) for the next period and given portfolio is stored in (self.stdOfMinVariancePortfolio, self.stdOfTangencyPortfolio)
 
 
-Im using the script to monitor daily risk in the danish C20CAP stock index, updated every 15 minutes by scraping data from the internet.
+Im using the script to monitor daily risk in the danish C20CAP stock index, updated every 50 minute by scraping data from the internet.
 
 
 
