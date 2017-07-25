@@ -9,3 +9,14 @@ Portfolio weights are stored in (self.normalized_min_variance_vector, self.norma
 Expected return for the next period and given portfolio is stored in (self.expected_return_of_min_var_portfolio, self.expected_return_of_tangency_portfolio)
 
 Standard deviation (Risk) for the next period and given portfolio is stored in (self.stdOfMinVariancePortfolio, self.stdOfTangencyPortfolio)
+
+
+Im using the script to monitor daily risk in the danish C20CAP stock index.
+
+
+
+Tangency (Largest return given risk)
+https://plot.ly/~nstaalung/63
+
+Minimum Variance (Lowest risk)
+https://plot.ly/~nstaalung/61
