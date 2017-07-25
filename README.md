@@ -1,4 +1,4 @@
-"# Optimal asset potfolios" 
+"# Optimal asset portfolios" 
 
 By principles of the Capital Assets Pricing Model (CAPM), the script returns the normalized minimum variance and tangency portfolios. These are the optimal portfolio weights for the two portfolios.
 
