@@ -42,10 +42,11 @@ class OptimalPortfolioDiversification():
             except:
                 raise ValueError('Cant create the tangent portfolio')
         elif not self.inverseTrue or lagrange:
+            pass
             #call te lagrange function
-            self.lagVarCovar()
-            self.minVarLagrange()
-            self.tangentPortfolioLagrange()
+            #self.lagVarCovar()
+            #self.minVarLagrange()
+            #self.tangentPortfolioLagrange()
 
 
 
@@ -63,7 +64,8 @@ class OptimalPortfolioDiversification():
         except:
             print "ERROR: Determinant equals zero, matrix not invertable. Proceeding with Lagrange instead and, you should test for invertability"
             try:
-                self.lagVarCovar()
+                #self.lagVarCovar()
+                pass
             except:
                 raise ValueError('Cant call lagrange function from the failed unique solution')
 
