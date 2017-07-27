@@ -1,5 +1,9 @@
 import numpy as np
 
+def covarMatrix(x):
+    """Helper to generate covar matrix"""
+    return np.matrix(x - np.mean(x, axis=0)[np.newaxis, :]).T * np.matrix(x - np.mean(x, axis=0)[np.newaxis, :])
+
 class OptimalPortfolioDiversification():
     """Finding the optimal portfolio weights by principals of CAPM"""
     def __init__(self,
@@ -50,7 +54,7 @@ class OptimalPortfolioDiversification():
     def varCovar(self):
         """calculating the variance-covariance matrix based on the return matrix"""
 
-        self.covariance_matrix = np.cov(self.est_return_matrix.T) #Cov interpreste rows as varaibles as standard, thats why we transpose
+        self.covariance_matrix = covarMatrix(self.est_return_matrix)
         self.cov_matrix_determinant = np.linalg.det(self.covariance_matrix)
         self.inverseTrue = False
         try:
@@ -116,7 +120,7 @@ class OptimalPortfolioDiversification():
 
     def lagVarCovar(self):
         """Function for prepping the matrices for other functions"""
-        self.covariance_matrix = np.cov(self.est_return_matrix.T)
+        self.covariance_matrix = covarMatrix(self.est_return_matrix)
         lag_weight_matrix = np.zeros(self.number_groups)
         lag_weight_matrix = np.hstack((lag_weight_matrix, np.array([1]))) #One is the lambda (remember lagrange function)
         self.lag_weight_matrix = np.matrix(lag_weight_matrix).T
@@ -126,7 +130,7 @@ class OptimalPortfolioDiversification():
         """Calculating the minimum variance portfolio by lagrange method"""
 
         try:
-            self.covariance_matrix = self.covariance_matrix
+            self.covariance_matrix 
         except:
             raise ValueError("Variance-Covariance matrix not assigned. Call lag_var_covar function")
 
