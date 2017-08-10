@@ -1,6 +1,6 @@
 # Optimal asset portfolios
 
-By principles of the Capital Assets Pricing Model (CAPM), the script returns the normalized minimum variance and tangency vectors. These are the optimal portfolio weights for the two efficient portfolios.
+By principles of the Capital Asset Pricing Model (CAPM), the script returns the normalized minimum variance and tangency vectors. These are the optimal portfolio weights for the two efficient portfolios.
 
 ## How to run the script
 
