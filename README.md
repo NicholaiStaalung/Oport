@@ -24,4 +24,4 @@ Tangency (Largest return given risk)
 https://plot.ly/~nstaalung/63
 
 Minimum Variance (Lowest risk)
-https://plot.ly/~nstaalung/61
+https://plot.ly/~nstaalung/65
