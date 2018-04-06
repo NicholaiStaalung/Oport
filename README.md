@@ -19,9 +19,3 @@ Standard deviation (Risk) for the next period and given portfolio is stored in (
 
 Im using the script to monitor daily risk in the danish C20CAP stock index, updated every 15 minutes by scraping data from borsen.dk
 
-
-Tangency (Largest return given risk)
-https://plot.ly/~nstaalung/63
-
-Minimum Variance (Lowest risk)
-https://plot.ly/~nstaalung/65
